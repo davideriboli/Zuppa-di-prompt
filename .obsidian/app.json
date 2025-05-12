@@ -1,0 +1,18 @@
+{
+  "defaultViewMode": "preview",
+  "livePreview": false,
+  "strictLineBreaks": true,
+  "showLineNumber": true,
+  "trashOption": "system",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "showInlineTitle": false,
+  "autoConvertHtml": true
+}

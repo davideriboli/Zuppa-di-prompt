@@ -1,0 +1,73 @@
+{
+  "obsidian-footnotes:insert-autonumbered-footnote": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "F"
+    }
+  ],
+  "insert-current-date": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "D"
+    }
+  ],
+  "obsidian-tidy-footnotes:tidy-footnotes": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowUp"
+    }
+  ],
+  "editor:toggle-bullet-list": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "L"
+    }
+  ],
+  "editor:toggle-numbered-list": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "N"
+    }
+  ],
+  "obsidian-sort-and-permute-lines:sort-alphabetically": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "S"
+    }
+  ],
+  "insert-current-time": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "O"
+    }
+  ],
+  "obsidian-read-it-later:save-clipboard-to-notice": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "R"
+    }
+  ]
+}

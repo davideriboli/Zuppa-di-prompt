@@ -1,0 +1,23 @@
+<!-- ShareMyPlugin begin -->
+
+
+|Name|Author|Version|Description|
+|----|------|-------|---|
+|[**Minimal Theme Settings**](https://obsidian.md/plugins?id=obsidian-minimal-settings) [⬇️](obsidian://SP-install?id=obsidian-minimal-settings&enable=true)|[@kepano](https://www.twitter.com/kepano) [♡](https://www.buymeacoffee.com/kepano)|8.1.1|Change the colors, fonts and features of Minimal Theme.|
+|[**Tag Wrangler**](https://obsidian.md/plugins?id=tag-wrangler) [⬇️](obsidian://SP-install?id=tag-wrangler&enable=true)|[PJ Eby](https://github.com/pjeby) [♡](https://dirtsimple.org/tips/tag-wrangler)|0.6.1|Rename, merge, toggle, and search tags from the tag pane|
+|[**Better Word Count**](https://obsidian.md/plugins?id=better-word-count) [⬇️](obsidian://SP-install?id=better-word-count&enable=true)|[Luke Leppan](https://lukeleppan.com)|0.10.1|Counts the words of selected text in the editor.|
+|[**BMO Chatbot**](https://obsidian.md/plugins?id=bmo-chatbot) [⬇️](obsidian://SP-install?id=bmo-chatbot&enable=true)|[Longy2k](https://github.com/longy2k) [♡](https://ko-fi.com/longy2k)|2.3.3|Generate and brainstorm ideas while creating your notes using Large Language Models (LLMs) from Ollama, LM Studio, Anthropic, Google Gemini, Mistral AI, OpenAI, and more for Obsidian.|
+|[**Sort & Permute lines**](https://obsidian.md/plugins?id=obsidian-sort-and-permute-lines) [⬇️](obsidian://SP-install?id=obsidian-sort-and-permute-lines&enable=true)|[Vinzent](https://github.com/Vinzent03) [♡](https://ko-fi.com/vinzent)|0.7.0||
+|[**Instapaper**](https://obsidian.md/plugins?id=instapaper) [⬇️](obsidian://SP-install?id=instapaper&enable=true)|[Instapaper](https://www.instapaper.com)|1.1.3|Instapaper integration.|
+|[**Paste URL into selection**](https://obsidian.md/plugins?id=url-into-selection) [⬇️](obsidian://SP-install?id=url-into-selection&enable=true)||1.7.0|Paste URL "into" selected text.|
+|[**Advanced Tables**](https://obsidian.md/plugins?id=table-editor-obsidian) [⬇️](obsidian://SP-install?id=table-editor-obsidian&enable=true)|[Tony Grosinger](https://grosinger.net) [♡](https://github.com/sponsors/tgrosinger)/[♡](https://buymeacoffee.com/tgrosinger)/[♡](https://paypal.me/tgrosinger)|0.22.1|Improved table navigation, formatting, manipulation, and formulas|
+|[**Enhancing Export**](https://obsidian.md/plugins?id=obsidian-enhancing-export) [⬇️](obsidian://SP-install?id=obsidian-enhancing-export&enable=true)|[YISH](https://github.com/mokeyish)|1.10.9|This is a enhancing export plugin for Obsidian. It allows to export to formats like Html, DOCX, ePub and PDF or Markdown(Hugo) etc.|
+|[**Footnote Shortcut**](https://obsidian.md/plugins?id=obsidian-footnotes) [⬇️](obsidian://SP-install?id=obsidian-footnotes&enable=true)|[Alexis Rondeau, Micha Brugger, Jason Qin](https://publish.obsidian.md/alexisrondeau)|0.1.3|Insert and write footnotes faster|
+|[**Share my plugin list**](https://obsidian.md/plugins?id=share-my-plugin-list) [⬇️](obsidian://SP-install?id=share-my-plugin-list&enable=true)|[Benature](https://github.com/Benature) [☕️](https://www.buymeacoffee.com/benature)/[⚡️](https://afdian.net/a/Benature-K)/[♡](https://s2.loli.net/2024/01/30/jQ9fTSyBxvXRoOM.png)|0.3.3|Share the enabled plugins in list/table format.|
+|[**ePub Reader**](https://obsidian.md/plugins?id=obsidian-epub-plugin) [⬇️](obsidian://SP-install?id=obsidian-epub-plugin&enable=true)|[caronchen](https://github.com/caronchen/obsidian-epub-plugin)|1.0.2|This is an ePub reader plugin for Obsidian. Can open document with ".epub" file extension.|
+|[**Tidy Footnotes**](https://obsidian.md/plugins?id=obsidian-tidy-footnotes) [⬇️](obsidian://SP-install?id=obsidian-tidy-footnotes&enable=true)|[Charlie Chao](https://github.com/charliecm) [♡](https://www.buymeacoffee.com/charliecm)|0.1.2|Tidy your footnotes seamlessly.|
+|[**Smart Typography**](https://obsidian.md/plugins?id=obsidian-smart-typography) [⬇️](obsidian://SP-install?id=obsidian-smart-typography&enable=true)|[mgmeyers](https://github.com/mgmeyers/obsidian-smart-typography)|1.0.18|Converts quotes to curly quotes, dashes to em dashes, and periods to ellipses|
+|[**ReadItLater**](https://obsidian.md/plugins?id=obsidian-read-it-later) [⬇️](obsidian://SP-install?id=obsidian-read-it-later&enable=true)|[Dominik Pieper](https://github.com/DominikPieper)|0.9.1|Archive web pages for reading later, referencing in your second brain or for other flexible use case Obsidian provides.|
+
+
+<!-- ShareMyPlugin end -->
