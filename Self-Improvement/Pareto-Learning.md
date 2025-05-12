@@ -1,10 +1,8 @@
 ---
 title: Pareto Learning
 description: Richiede la suddivisione di qualsiasi competenza si desideri acquisire in un piano d’apprendimento attuabile e concreto e cerca di fornire una risorsa didattica per ogni concetto.
-tags:
-  - prompt
-creazione: 2025-05-11
-ultima-modifica: 2025-05-11
+tags: [prompt, chatgpt]
+date: "2025-05-11"
 ---
 
 # Pareto Learning

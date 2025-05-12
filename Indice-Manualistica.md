@@ -1,9 +1,8 @@
 ---
 title: Manualistica
 description: "Indice di sezione"
-tags: [risorse-varie]
-creazione: 2025-05-11
-ultima-modifica: 2025-05-11
+tags: [manualistica, indici]
+date: "2025-05-11"
 ---
 
 # Manualistica

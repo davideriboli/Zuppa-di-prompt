@@ -1,10 +1,8 @@
 ---
 title: Strategie di marketing in JSON
 description: Fa partire una intervista all’utente sulla sua attività, e poi sviluppa una strategia di marketing che salva in JSON.
-tags:
-  - prompt
-creazione: 2025-05-11
-ultima-modifica: 2025-05-11
+tags: [prompt, chatgpt]
+date: "2025-05-11"
 ---
 
 # Strategie di marketing in JSON

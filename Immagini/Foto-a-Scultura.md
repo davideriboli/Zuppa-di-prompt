@@ -2,8 +2,7 @@
 title: Da Foto a Scultura
 description: "Dopo l'upload di una immagine, ne ricava una seconda in stile scultoreo."
 tags: [prompt, chatgpt4o]
-creazione: 2025-05-11
-ultima-modifica: 2025-05-11
+date: "2025-05-11"
 ---
 
 # Da Foto a Scultura

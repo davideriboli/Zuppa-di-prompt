@@ -1,10 +1,8 @@
 ---
 title: Ricerca Psicografica
 description: Conduce una ricerca approfondita per scoprire le reali convinzioni, difficoltà ed esperienze di eventuali clienti, al fine di produrre poi campagne, mockup e testi emotivamente coinvolgenti e ad alto tasso di conversione.
-tags:
-  - prompt
-creazione: 2025-05-11
-ultima-modifica: 2025-05-11
+tags: [prompt, chatgpt]
+date: "2025-05-11"
 ---
 
 # Ricerca Psicografica

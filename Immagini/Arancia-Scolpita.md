@@ -1,11 +1,8 @@
 ---
 title: Arancia-Scolpita
 description: Crea un determinato soggetto come se fosse stato scolpito in una arancia.
-tags:
-  - prompt
-  - dall-e3
-creazione: 2025-05-11
-ultima-modifica: 2025-05-11
+tags: [prompt, chatgpt4o]
+date: "2025-05-11"
 ---
 
 # Arancia Scolpita

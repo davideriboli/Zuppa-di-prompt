@@ -1,10 +1,8 @@
 ---
 title: Life Optimization Strategy
 description: Una sorta di *personal coach*, molto pragmatico.
-tags:
-  - prompt
-creazione: 2025-05-11
-ultima-modifica: 2025-05-11
+tags: [prompt, chatgpt]
+date: "2025-05-11"
 ---
 
 # Life Optimization Strategy

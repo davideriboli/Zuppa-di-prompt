@@ -10,13 +10,15 @@
 
 ---
 
-Il mio grimorio personale di *prompt* per vari tipi di IA e risorse affini.
+Questo è il mio grimorio personale di *prompt* per vari tipi di IA e risorse affini.
 
 Ne ho iniziato la creazione il 7 dicembre 2024, in forma di block-notes personale dove appuntare i progressi e le "ricette" dei miei esperimenti ed è in costante aggiornamento. 
 
 Il *repository* contiene risorse in italiano ed inglese ed è organizzato in forma di *vault* [Obsidian](https://obsidian.md).  Per visualizzare correttamente le pagine, le immagini e i collegamenti, clonate sul vostro computer o scaricate l'intero *repository* e apritelo con Obsidian.
 
-Il mio lavoro è distribuito sotto licenza Unlicense (vedi “LICENSE”). Ogni altro allegato appartiene ai suoi legittimi proprietari ed è distribuito rispettandone la licenza.
+Obsidian è un ottimo software e potrete usare questa configurazione per creare la vostra personale collezione oppure modificare questa come meglio ritenete.
+
+Il mio appunti sono distribuiti sotto licenza *Unlicense* (vedi “LICENSE”). Ogni altro allegato appartiene ai suoi legittimi proprietari ed è distribuito rispettandone la licenza.
 
 - [Indice Manualistica](Indice-Manualistica.md)
 - [Indice Prompt](Indice-Prompt.md)

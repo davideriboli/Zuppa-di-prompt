@@ -2,8 +2,7 @@
 title: Anatomie Digitali
 description: "Crea un soggetto in linee blu luminose, su fondo scuro e ne esalta una parte in rosso."
 tags: [prompt, chatgpt4o]
-creazione: 2025-05-11
-ultima-modifica: 2025-05-11
+date: "2025-05-11"
 ---
 
 # Anatomie Digitali

@@ -1,10 +1,8 @@
 ---
 title: Focus Immagini Mentali
 description: Conduce alla generazione dell'immagine nella mente dell’utente, guidandolo attraverso una serie di domande.
-tags:
-  - prompt
-creazione: 2025-05-11
-ultima-modifica: 2025-05-11
+tags: [prompt, chatgpt4o]
+date: "2025-05-11"
 ---
 
 # Focus Immagini Mentali

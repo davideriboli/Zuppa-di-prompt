@@ -1,10 +1,8 @@
 ---
 title: Blocco Evolutivo
 description: Produce una indagine approfondita e non consolatoria sui reali motivi di qualsiasi blocco nel raggiungimento di un obiettivo.
-tags:
-  - prompt
-creazione: 2025-05-11
-ultima-modifica: 2025-05-11
+tags: [prompt, chatgpt]
+date: "2025-05-11"
 ---
 
 # Blocco Evolutivo
