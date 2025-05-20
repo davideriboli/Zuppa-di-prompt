@@ -17,4 +17,4 @@ Le occorrenze di `simple`, possono essere cambiate in `intricated` per effetti p
 
 ---
 
-- Fonte: [UmeshAI](https://x.com/umesh_ai)
+- Fonte: https://x.com/umesh_ai

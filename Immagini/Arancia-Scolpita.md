@@ -12,4 +12,4 @@ hyper-realistic image showcasing an extraordinary piece of orange pulp, meticulo
 ```
 ---
 
-- Fonte: [UmeshAI](https://x.com/umesh_ai)
+- Fonte: https://x.com/umesh_ai

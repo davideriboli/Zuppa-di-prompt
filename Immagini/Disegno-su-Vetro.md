@@ -13,4 +13,4 @@ A photorealistic image of a glass window on a rainy, foggy day. The window is co
 
 ---
 
-- Fonte: [UmeshAI](https://x.com/umesh_ai)
+- Fonte: https://x.com/umesh_ai

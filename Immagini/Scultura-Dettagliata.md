@@ -13,4 +13,4 @@ A photorealistic image of an ultra-detailed sculpture of a [PROMPT] made of shin
 
 ---
 
-- Fonte: [UmeshAI](https://x.com/umesh_ai)
+- Fonte: https://x.com/umesh_ai

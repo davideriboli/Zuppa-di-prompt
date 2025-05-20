@@ -13,4 +13,4 @@ A digital illustration of a [SUBJECT] outlined with bright blue lines over a dar
 
 ---
 
-- Fonte: [UmeshAI](https://x.com/umesh_ai)
+- Fonte: https://x.com/umesh_ai

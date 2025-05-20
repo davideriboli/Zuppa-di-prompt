@@ -15,6 +15,7 @@ TABLE WITHOUT ID
     description AS "Descrizione"
 FROM "Marketing"
 WHERE file.name != this.file.name AND file.ext = "md"
+SORT file.name ASC
 ```
 
 ---
@@ -27,6 +28,7 @@ TABLE WITHOUT ID
     description AS "Descrizione"
 FROM "Immagini"
 WHERE file.name != this.file.name AND file.ext = "md"
+SORT file.name ASC
 ```
 
 ---
@@ -39,6 +41,7 @@ TABLE WITHOUT ID
     description AS "Descrizione"
 FROM "Self-Improvement"
 WHERE file.name != this.file.name AND file.ext = "md"
+SORT file.name ASC
 ```
 
 ---

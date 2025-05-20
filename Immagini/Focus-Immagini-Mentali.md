@@ -79,4 +79,4 @@ Remember: Stay conversational but focused. Each question should build upon previ
 
 ---
 
-- Fonte: [Apollonator3000](https://x.com/apollonator3000)
+- Fonte: https://x.com/apollonator3000

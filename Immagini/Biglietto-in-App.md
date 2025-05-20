@@ -33,4 +33,4 @@ Example placeholders:
 
 ---
 
-- Fonte: [UmeshAI](https://x.com/umesh_ai)
+- Fonte: https://x.com/umesh_ai

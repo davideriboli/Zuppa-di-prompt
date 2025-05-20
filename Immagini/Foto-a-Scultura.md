@@ -13,4 +13,4 @@ A photorealistic image of an ultra-detailed sculpture of the subject in image ma
 
 ---
 
-- Fonte: [UmeshAI](https://x.com/umesh_ai)
+- Fonte: https://x.com/umesh_ai

@@ -13,4 +13,4 @@ A photograph captures a daytime scene with a [SUBJECT/OBJECT] formed by scattere
 
 ---
 
-- Fonte: [UmeshAI](https://x.com/umesh_ai)
+- Fonte: https://x.com/umesh_ai
