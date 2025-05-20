@@ -1,26 +1,40 @@
-# Astarte
+# Zuppa di prompt
 
-> Parlami! Ho errato sulla terra e non ho mai trovato a te l’uguale.<br>
-> Parlami! T’ho cercato tra le stelle a vanire,<br>
-> ho contemplato il cielo inutilmente, senza trovarti mai. Parlami!<br>
-> Guarda, i demoni a me attorno, hanno pietà di me che non li temo<br>
-> ed ho pietà per te soltanto. Parlami!<br>
-> Sdegnata, se vuoi, ma parlami!<br>
-> Dimmi non so che cosa, ma che io ti senta una volta ancora[^1].<br>
+![](cover.jpg)
+
+Questo *repository* è la mia personale raccolta di ricette AI e *prompt*, curata per diverse intelligenze artificiali e completa di documentazione per la generazione di ulteriori *prompt*, risorse per la costruzione di agenti e appunti affini.
+
+Nato il 7 dicembre 2024 come un block-notes per i miei esperimenti con l'IA, è un lavoro costantemente in corso che evolve di continuo con nuove "ricette".
+
+## Contenuti e formati
+
+* **Raccolte di Prompt:** Una vasta gamma di *prompt* testati e pronti all'uso per varie IA.
+* **Documentazione e Guide:** Manualistica e risorse utili per affinare l'arte del *prompt engineering* e per approcciarsi alla costruzione di agenti AI.
+* **Risorse Multilingua:** Contenuti sia in italiano che in inglese.
+* **Formato Obsidian Vault:** L'intero grimorio è strutturato come un [vault di Obsidian](https://obsidian.md). 
+
+## Utilizzo
+
+Per esplorare **Astarte** al meglio e visualizzare correttamente le pagine, le immagini e i collegamenti interconnessi:
+
+1.  **Clona o Scarica:** Effettua un clone completo del repository sul tuo computer oppure scarica l'archivio ZIP.
+2.  **Apri con Obsidian:** Utilizza il software [Obsidian](https://obsidian.md) per aprire la cartella del repository come un vault.
+
+Obsidian è un potente strumento per la gestione della conoscenza. Puoi utilizzare questa configurazione come base per creare la tua collezione personale di *prompt* e note.
+
+## Navigazione Principale
+
+Per orientarti tra i contenuti, puoi iniziare da questi indici (i link funzionano correttamente solo in Obsidian):
+
+* [Indice-Link](Indice-Link.md): Una collezione di link utili e risorse esterne.
+* [Indice-Manualistica](Indice-Manualistica.md): Guide e documentazione selezionata.
+* [Indice-Prompt](Indice-Prompt.md): L'accesso diretto alle raccolte di prompt.
+
+## Licenza
+
+I miei appunti e le mie creazioni originali all'interno di questo repository sono distribuiti con licenza **Unlicense** (fai riferimento al file `LICENSE` per i dettagli).
+Ogni altro materiale, allegato o risorsa di terze parti appartiene ai rispettivi legittimi proprietari ed è qui incluso nel rispetto delle relative licenze di distribuzione.
 
 ---
 
-Questo è il mio grimorio personale di *prompt* per vari tipi di IA e risorse affini.
-
-Ne ho iniziato la creazione il 7 dicembre 2024, in forma di block-notes personale dove appuntare i progressi e le "ricette" dei miei esperimenti ed è in costante aggiornamento. 
-
-Il *repository* contiene risorse in italiano ed inglese ed è organizzato in forma di *vault* [Obsidian](https://obsidian.md).  Per visualizzare correttamente le pagine, le immagini e i collegamenti, clonate sul vostro computer o scaricate l'intero *repository* e apritelo con Obsidian.
-
-Obsidian è un ottimo software e potrete usare questa configurazione per creare la vostra personale collezione oppure modificare questa come meglio ritenete.
-
-Il mio appunti sono distribuiti sotto licenza *Unlicense* (vedi “LICENSE”). Ogni altro allegato appartiene ai suoi legittimi proprietari ed è distribuito rispettandone la licenza.
-
-- [Indice Manualistica](Indice-Manualistica.md)
-- [Indice Prompt](Indice-Prompt.md)
-
-[^1]:  Lord G.G. Byron, *Manfred*, versione di Carmelo Bene, 1979.
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
