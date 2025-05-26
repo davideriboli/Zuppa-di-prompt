@@ -11,11 +11,11 @@ Nato il 7 dicembre 2024 come un block-notes per i miei esperimenti con l'IA, è 
 * **Raccolte di Prompt:** Una vasta gamma di *prompt* testati e pronti all'uso per varie IA.
 * **Documentazione e Guide:** Manualistica e risorse utili per affinare l'arte del *prompt engineering* e per approcciarsi alla costruzione di agenti AI.
 * **Risorse Multilingua:** Contenuti sia in italiano che in inglese.
-* **Formato Obsidian Vault:** L'intero grimorio è strutturato come un [vault di Obsidian](https://obsidian.md). 
+* **Formato Obsidian Vault:** L'intero “grimorio” è strutturato come un [vault di Obsidian](https://obsidian.md). 
 
 ## Utilizzo
 
-Per esplorare **Astarte** al meglio e visualizzare correttamente le pagine, le immagini e i collegamenti interconnessi:
+Per esplorare **Zuppa di Prompt** al meglio e visualizzare correttamente le pagine, le immagini e i collegamenti interconnessi:
 
 1.  **Clona o Scarica:** Effettua un clone completo del repository sul tuo computer oppure scarica l'archivio ZIP.
 2.  **Apri con Obsidian:** Utilizza il software [Obsidian](https://obsidian.md) per aprire la cartella del repository come un vault.

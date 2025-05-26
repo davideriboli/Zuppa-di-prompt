@@ -18,6 +18,7 @@ date: "2025-05-11"
 
 ### Prompt
 
+- [Anthropic Prompt engineering overview](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)
 - [ChatGPT JSON Randomator Istruzioni](https://www.davideriboli.net/p/chatgpt4o-json-styles-randomator?r=3nvgel&utm_campaign=post&utm_medium=web) | Manuale istruzioni (vedi strumento a seguire)
 - [ChatGPT JSON Randomator Tool](https://docs.google.com/spreadsheets/d/1R7WD8C0ePYd2Viq907IZpLyOnu1iiuCLNxFlhsEFuCA/edit?usp=sharing)  | Generatore di *prompt* randomici in formato JSON
 - [Claude Prompt Engineering Templates and Variables](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-templates-and-variables) | Guida avanzata Claude
