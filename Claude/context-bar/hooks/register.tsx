@@ -1,11 +1,13 @@
 import { atom, read, update } from 'claude-code'
-import type { EngineInterface, Register } from 'claude-code'
+import type { EngineInterface, Register, Timer } from 'claude-code'
 
 import type { Limit, Slice, Snapshot } from '../types'
 
 const COMMAND = 'context-bar'
 const snapshot = atom({ plugin: 'context-bar', key: 'snapshot' } as const, null)
 const isOn = atom({ plugin: 'context-bar', key: 'isOn' } as const, true)
+// Cambia una volta al minuto: chi lo legge si ridisegna, e il tempo all'azzeramento resta giusto.
+const minute = atom({ plugin: 'context-bar', key: 'minute' } as const, 0)
 
 // Le righe di /context arrivano in inglese: qui il nome che compare nella legenda.
 const LABELS: Record<string, string> = {
@@ -27,16 +29,24 @@ const LIMIT_LABELS: Record<string, string> = {
   spend_limit: 'Spesa',
 }
 const LIMIT_CELLS = 20
+// Sotto questa larghezza la barra del contesto va su una riga sua, senza riepilogo accanto.
+const MIN_BAR = 10
 
 const GLYPH: Record<Slice['kind'], string> = { used: '█', free: '░', buffer: '▒', deferred: '' }
 
 // Aggiornare a ogni strumento costerebbe troppo: al massimo una volta ogni 5 secondi.
 const THROTTLE_MS = 5000
 
+// Si arrotonda prima di scegliere l'unità: 999,6 è "1k", 999.950 è "1M".
 export function formatTokens(n: number): string {
-  if (n < 1000) return String(Math.round(n))
-  const [value, unit] = n >= 1_000_000 ? [n / 1_000_000, 'M'] : [n / 1000, 'k']
-  const text = value >= 100 ? String(Math.round(value)) : value.toFixed(1).replace(/\.0$/, '')
+  if (Math.round(n) < 1000) return String(Math.round(n))
+  let value = n / 1000
+  let unit = 'k'
+  if (Math.round(value) >= 1000) {
+    value = n / 1_000_000
+    unit = 'M'
+  }
+  const text = value >= 99.95 ? String(Math.round(value)) : value.toFixed(1).replace(/\.0$/, '')
 
   return text.replace('.', ',') + unit
 }
@@ -71,7 +81,6 @@ export function allocate(slices: readonly Slice[], total: number, width: number)
   return cells
 }
 
-// Non lancia mai: una barra non aggiornata non deve fermare un comando o uno strumento.
 // Quanto manca all'azzeramento, in parole: "tra 2 h 13 min", "tra 3 g 4 h".
 export function formatReset(resetsAt: string | undefined, now: number): string {
   const at = resetsAt ? Date.parse(resetsAt) : NaN
@@ -91,6 +100,12 @@ export function limitColor(percent: number): string {
   return 'success'
 }
 
+// Celle piene di una barra dei crediti, sempre fra 0 e `cells`.
+export function limitFill(percent: number, cells: number): number {
+  return Math.max(0, Math.min(cells, Math.round((percent / 100) * cells)))
+}
+
+// Non lancia mai: una barra non aggiornata non deve fermare un comando o uno strumento.
 async function refresh($: EngineInterface): Promise<void> {
   const usage = await $.session.usage({ breakdown: 'summary' }).catch(() => null)
   const breakdown = usage?.context.breakdown
@@ -116,6 +131,7 @@ async function refresh($: EngineInterface): Promise<void> {
 
 export const register: Register = on => {
   let lastRefresh = 0
+  let ticker: Timer | undefined
 
   on('session.start', async ($, e, next) => {
     await $.command.register({
@@ -125,6 +141,13 @@ export const register: Register = on => {
     const stored = await $.store.get('isOn')
     if (typeof stored === 'boolean') await update($, isOn, () => stored)
     void refresh($)
+    ticker?.cancel()
+    ticker = $.clock.every(60_000, () => {
+      void $.clock
+        .now()
+        .then(now => update($, minute, () => now))
+        .catch(() => {})
+    })
 
     return next(e)
   })
@@ -151,7 +174,7 @@ export const register: Register = on => {
 
   on('turn.complete', async ($, e, next) => {
     const result = await next(e)
-    lastRefresh = await $.clock.now()
+    lastRefresh = await $.clock.now().catch(() => lastRefresh)
     await refresh($)
 
     return result
@@ -171,11 +194,16 @@ export const register: Register = on => {
     }
 
     const { Box, Text } = $.ui.resolve(e)
+    await read($, minute)
+    const columns = Math.max(1, e.props.bodyColumns)
     const summary = ` ${formatTokens(shot.used)}/${formatTokens(shot.window)} · ${Math.round(shot.percent)}%`
-    const width = Math.max(10, e.props.bodyColumns - summary.length)
+    const isNarrow = columns - summary.length < MIN_BAR
+    const width = isNarrow ? columns : columns - summary.length
     const total = Math.max(shot.window, shot.slices.reduce((a, s) => a + s.tokens, 0))
     const cells = allocate(shot.slices, total, width)
-    const now = await $.clock.now()
+    // Spazio per etichetta e percentuale ("Settimana " e " 100%"): la barra dei crediti si accorcia.
+    const limitCells = Math.max(1, Math.min(LIMIT_CELLS, columns - 15))
+    const now = await $.clock.now().catch(() => Date.now())
 
     return (
       <Box flexDirection="column">
@@ -187,10 +215,17 @@ export const register: Register = on => {
               </Text>
             ) : null,
           )}
-          <Text key="summary" dimColor>
-            {summary}
-          </Text>
+          {!isNarrow && (
+            <Text key="summary" dimColor>
+              {summary}
+            </Text>
+          )}
         </Box>
+        {isNarrow && (
+          <Text key="summary" dimColor>
+            {summary.trim()}
+          </Text>
+        )}
         <Box key="legend" flexDirection="row" flexWrap="wrap" columnGap={2}>
           {shot.slices.map((s, i) => (
             <Box key={`legend-${i}`} flexDirection="row">
@@ -204,14 +239,14 @@ export const register: Register = on => {
         {shot.limits.length > 0 && (
           <Box key="limits" flexDirection="row" flexWrap="wrap" columnGap={3}>
             {shot.limits.map(l => {
-              const filled = Math.min(LIMIT_CELLS, Math.round((l.percent / 100) * LIMIT_CELLS))
+              const filled = limitFill(l.percent, limitCells)
               const reset = formatReset(l.resetsAt, now)
 
               return (
                 <Box key={`limit-${l.kind}`} flexDirection="row">
                   <Text>{LIMIT_LABELS[l.kind] ?? l.kind} </Text>
                   <Text color={limitColor(l.percent)}>{'█'.repeat(filled)}</Text>
-                  <Text dimColor>{'░'.repeat(LIMIT_CELLS - filled)}</Text>
+                  <Text dimColor>{'░'.repeat(limitCells - filled)}</Text>
                   <Text color={limitColor(l.percent)}> {Math.round(l.percent)}%</Text>
                   {reset !== '' && <Text dimColor> · {reset}</Text>}
                 </Box>

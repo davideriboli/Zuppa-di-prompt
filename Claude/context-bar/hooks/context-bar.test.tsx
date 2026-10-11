@@ -1,7 +1,7 @@
 import { expect, mock, test } from 'claude-code/testing'
 import type { ContextCategory, SessionUsage } from 'claude-code'
 
-import { allocate, formatReset, formatTokens, limitColor } from './register'
+import { allocate, formatReset, formatTokens, limitColor, limitFill } from './register'
 
 const row = (name: string, tokens: number, color: string, kind: ContextCategory['kind']): ContextCategory => ({
   name,
@@ -65,6 +65,15 @@ test('le celle seguono i token e riempiono la larghezza', () => {
   expect(formatTokens(1_000_000)).toBe('1M')
 })
 
+test('casi limite: arrotondamenti e barre dei crediti fuori scala', () => {
+  expect(formatTokens(999.6)).toBe('1k')
+  expect(formatTokens(99_960)).toBe('100k')
+  expect(formatTokens(999_950)).toBe('1M')
+  expect(limitFill(-5, 20)).toBe(0)
+  expect(limitFill(150, 20)).toBe(20)
+  expect(limitFill(50, 20)).toBe(10)
+})
+
 test('azzeramento in parole e colore per soglia', () => {
   const now = Date.parse('2026-10-11T12:47:00Z')
   expect(formatReset('2026-10-11T15:00:00Z', now)).toBe('si azzera tra 2 h 13 min')
@@ -102,6 +111,13 @@ test('/context-bar spegne e riaccende la barra', async ($, on) => {
     expect(await ui.find({ type: 'Text', text: /63%/ })).toBeDefined()
     expect(await ui.find({ type: 'Text', text: /si azzera tra 2 h 13 min/ })).toBeDefined()
     expect(await ui.find({ type: 'Text', text: /Settimana/ })).toBeDefined()
+    await ui.unmount()
+
+    // Terminale stretto: il riepilogo scende su una riga sua, niente si rompe.
+    const narrow = { ...BAND, props: { ...BAND.props, bodyColumns: 20 } }
+    ui = await $.ui.mount({ plugin: 'context-bar', surface, ...narrow })
+    expect(await ui.find({ type: 'Text', text: /^50k\/200k · 25%$/ })).toBeDefined()
+    expect(await ui.find({ type: 'Text', text: /Sessione/ })).toBeDefined()
     await ui.unmount()
   }
 })

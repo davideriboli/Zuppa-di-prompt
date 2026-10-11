@@ -21,6 +21,6 @@ export type Snapshot = {
 
 declare module 'claude-code' {
   interface PluginState {
-    'context-bar': { snapshot: Snapshot | null; isOn: boolean }
+    'context-bar': { snapshot: Snapshot | null; isOn: boolean; minute: number }
   }
 }

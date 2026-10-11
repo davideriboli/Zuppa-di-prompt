@@ -53,6 +53,8 @@ claude plugin install context-bar@zuppa-di-prompt --scope user
 
 Dopo ogni modifica ai file basta `/reload-plugins`. I test si lanciano con `claude plugin test ~/GitHub/Zuppa-di-prompt/Claude/context-bar`.
 
+Per il controllo dei tipi (`npx -p typescript tsc -p Claude/context-bar`) serve il file dei tipi di Claude Code in `Claude/context-bar/.claude-plugin/types/`. Git non lo salva, perché cambia a ogni versione di Claude Code: basta chiedere a Claude di copiarlo lì dalla skill plugin-authoring.
+
 ### 3. Con un prompt
 
 Claude ricostruisce la mod da zero, partendo dalla descrizione qui sotto. Serve dove il repository non è raggiungibile, o come base per una variante. Il codice che ne esce può essere diverso da quello di questa cartella, ma deve comportarsi allo stesso modo. Il prompt va incollato in una sessione di Claude Code.
