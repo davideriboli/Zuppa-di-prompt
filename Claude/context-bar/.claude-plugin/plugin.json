@@ -1,0 +1,9 @@
+{
+  "name": "context-bar",
+  "version": "0.1.0",
+  "description": "Barra impilata della finestra di contesto sopra il prompt, un colore per categoria come /context. Si accende e si spegne con /context-bar.",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "Davide Riboli"
+  }
+}

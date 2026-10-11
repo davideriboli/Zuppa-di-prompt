@@ -1,0 +1,6 @@
+{
+  "name": "zuppa-di-prompt",
+  "description": "Le mod di Claude Code della Zuppa di prompt, la raccolta di ricette di Davide Riboli.",
+  "owner": { "name": "Davide Riboli" },
+  "plugins": [{ "name": "context-bar", "source": "./Claude/context-bar" }]
+}

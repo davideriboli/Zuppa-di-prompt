@@ -1,0 +1,6 @@
+# Tipi che Claude Code scrive accanto a ogni mod caricata: si rigenerano da soli
+.claude-plugin/types/
+Claude/*/.claude-plugin/types/
+
+.DS_Store
+Thumbs.db
