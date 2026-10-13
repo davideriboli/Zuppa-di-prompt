@@ -14,6 +14,7 @@ La cucina, come la cibernetica, è una questione di retroazione: si assaggia, si
 |---|---|---|
 | [`Claude/`](Claude/) | Claude Code | [context-bar](Claude/context-bar.md): la finestra di contesto e i crediti consumati, sempre visibili sopra il prompt |
 | [`Gemini/`](Gemini/) | Antigravity CLI e Gemini | ancora nessuna |
+| — | Claude Code, Antigravity CLI e Gemini CLI | [Athena](Athena.md): costruire e gestire un corso con Obsidian e un agente. Vive in un [repository tutto suo](https://github.com/davideriboli/Athena) |
 
 Ogni ricetta è un file markdown che spiega a che cosa serve, come si installa e, quando serve, contiene il prompt per farla ricostruire all'agente. Se la ricetta ha del codice, questo sta in una cartella accanto, con lo stesso nome.
 
